@@ -1,0 +1,357 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(197, 247, 230);
+}
+
+.side {
+  display: flex;
+  margin: 20px;
+}
+
+.heading h1 {
+  padding: 10px;
+  margin: 10px;
+  height: 40px;
+  background-color: skyblue;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left {
+  display: block;
+  padding: 20px;
+}
+
+.left h2 {
+  height: 40px;
+
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(79, 79, 248);
+  letter-spacing: 2px;
+}
+
+.left img {
+  height: 200px;
+  border-radius: 45%;
+  border: 3px solid transparent;
+  box-shadow: 3px 3px;
+}
+
+.left img:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.left h3 {
+  padding: 15px;
+  margin: 20px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+  color: rgb(20, 20, 247);
+}
+
+.left h4 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.left p {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.left h5 {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #ffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, o.1);
+}
+
+.container .left {
+  position: relative;
+  background-color: #003147;
+  padding: 40px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.profile h1 {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.4em;
+  margin-top: 20px;
+}
+
+.profile h1 c {
+  font-size: 20px;
+  font-weight: 300;
+  color: pink;
+}
+
+/* .profile .image {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+} */
+
+.profile .image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 3px 3px;
+}
+
+img:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
+.contact {
+  padding-top: 40px;
+}
+
+.contact .title {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  position: relative;
+}
+.contact ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: skyblue;
+}
+
+.contact ul li span {
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.Language {
+  padding-top: 50px;
+
+  padding-right: 100px;
+}
+
+.Language .title {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.Language ul {
+  position: relative;
+}
+
+.Language ul li {
+  color: #ffffff;
+  font-size: 18px;
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.container .right {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.About {
+  padding-top: 40px;
+}
+
+.About .title {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.About p {
+  color: black;
+  font-size: 18px;
+  justify-content: center;
+  text-align: left;
+  /* word-spacing: 10px; */
+  line-height: 1.5;
+}
+
+.skill .title {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.skill ul {
+  position: relative;
+  margin-bottom: 20px;
+}
+.skill ul li {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 18px;
+  position: relative;
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+
+.project .title {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.project ul {
+  position: relative;
+}
+
+.project ul li {
+  text-align: left;
+  font-size: 18px;
+  position: relative;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.education {
+  position: relative;
+}
+
+.education .side {
+  display: flex;
+  margin: 20px;
+}
+
+.education .side h3 {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.education .side h4 {
+  font-size: 18px;
+  padding-left: 150px;
+  justify-content: center;
+}
+
+.education .side p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  /* margin: 0px 0; */
+  text-align: left;
+}
+
+.education .side degree {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 160px;
+}
+
+.education .side d {
+  font-size: 18px;
+  /* font-weight: bold; */
+  padding-left: 80px;
+}
+
+.education .side b {
+  font-size: 18px;
+  /* font-weight: bold; */
+  padding-left: 120px;
+}
+
+.certification {
+  position: relative;
+}
+
+.certification .title {
+  padding-top: 20px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.certification span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.certification p {
+  font-size: 18px;
+}
