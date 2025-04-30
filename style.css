@@ -316,7 +316,7 @@ h5 {
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
-  text-align: left;
+  text-align: justify;
 }
 
 .con img {
@@ -369,10 +369,13 @@ h5 {
 }
 
 .LMS {
+
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
   min-height: 400px;
+
 }
 
 .LMS .button {
@@ -390,6 +393,66 @@ h5 {
   background-color: transparent;
   border: 2px solid #f9004d;
   cursor: pointer;
+}
+
+.Skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 40px 20px;
+  background-color: #121212;
+  /* Dark background (optional) */
+}
+
+.Skill .con {
+  background-color: #1e1e1e;
+
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.Skill .con .p  p{
+color: #fcfc;
+}
+
+.Skill .con:hover {
+  transform: translateY(-5px);
+}
+
+.Skill .p img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.Skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.Skill p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Skill .con {
+    max-width: 90%;
+  }
 }
 
 .icon {
